@@ -16,11 +16,13 @@
   -->
 
 <manifest
-    package="com.example.android.testing.notes"
+    package="com.khangtoh.android.testing.notes"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -28,16 +30,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-                android:name=".notes.NotesActivity"
+                android:name="com.khangtoh.android.testing.notes.notes.NotesActivity"
                 android:theme="@style/AppTheme.OverlapSystemBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".notedetail.NoteDetailActivity" />
-        <activity android:name=".addnote.AddNoteActivity" />
-        <activity android:name=".statistics.StatisticsActivity" />
+        <activity android:name="com.khangtoh.android.testing.notes.notedetail.NoteDetailActivity" />
+        <activity android:name="com.khangtoh.android.testing.notes.addnote.AddNoteActivity" />
+        <activity android:name="com.khangtoh.android.testing.notes.statistics.StatisticsActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,2 @@
+json_key_file "./googleplay-releasemgr-89af89939702.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "com.khangtoh.android.testing.notes" # e.g. com.krausefx.app
